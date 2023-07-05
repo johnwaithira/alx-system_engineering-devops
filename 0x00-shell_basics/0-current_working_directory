@@ -1,2 +1,2 @@
-#!/bin/bash
-current_dir=$(pwd) echo "$current_dir"
+#!/bin/bash current_dir=$(pwd) echo "$current_dir"
+chmod +x 0-current_working_directory
