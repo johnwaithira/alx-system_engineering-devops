@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.html" -type f -exec bash -c 'cp -u "$0" "$(dirname "$(dirname "$(pwd)")")/$0"' {} \; > /dev/null 2>&1
+find . -name "*.html" -type f -exec bash -c 'cp -u "$0" "$(dirname "$(dirname "$(pwd)")")/$0"' {} \> /dev/null 2>&1
