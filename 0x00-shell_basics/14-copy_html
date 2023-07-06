@@ -1,2 +1,2 @@
 #!/bin/bash
-for html_file in *.html; do cp "$html_file" "$(dirname "$html_file")/../" done
+for html_file in $(find . -name "*.html"); do cp "$html_file" "$(dirname "$html_file")/../" done
