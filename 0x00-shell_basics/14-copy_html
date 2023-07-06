@@ -1,2 +1,2 @@
 #!/bin/bash
-cp $(find . -name "*.html") "$(dirname "$(find . -name "*.html")")/../"
+cp $(find . -name "*.html") "$(dirname "$(find . -name "*.html")")/../" ls -la "$(dirname "$(find . -name "*.html")")/../" &>/dev/null
