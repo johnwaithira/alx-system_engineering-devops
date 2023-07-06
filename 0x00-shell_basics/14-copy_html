@@ -1,0 +1,10 @@
+#!/bin/bash
+current_dir=$(pwd)
+parent_dir=$(dirname "$current_dir")
+find . -name "*.html" -type f | while read -r file; do
+  file_path="${file#./}"
+  if [ ! -e "$parent_dir/$file_path" ] || [ "$file" -nt "$parent_dir/$file_path" ]; then
+    cp "$file" "$parent_dir/$file_path"
+    echo "Copied $file to $parent_dir/$file_path"
+  fi
+done
